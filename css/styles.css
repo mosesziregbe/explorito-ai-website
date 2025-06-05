@@ -22,6 +22,7 @@ body {
   color: #fff;
   line-height: 1.6;
   scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 
 a {
@@ -357,7 +358,7 @@ img {
 /* Features  */
 
 .features {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .features__container {
@@ -424,7 +425,7 @@ img {
 } */
 
 .productivity-features__container {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -529,7 +530,7 @@ a.productivity-features__bento-grid-item::before {
 /* Details Section */
 
 .details__container {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .details__grid {
@@ -612,7 +613,7 @@ a.productivity-features__bento-grid-item::before {
 /* Integrations Section */
 
 .integrations__container {
-  padding: 6rem 2rem;
+  padding: 6rem 2rem 4rem;
   text-align: center;
 }
 
@@ -646,7 +647,7 @@ a.productivity-features__bento-grid-item::before {
 /* Testimonials Section */
 
 .testimonials__container {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -788,17 +789,19 @@ a.productivity-features__bento-grid-item::before {
 
 .testimonials__swiper-wrapper {
   display: flex;
-  width: max-content;
-  animation: marquee 30s linear infinite;
+  flex-wrap: nowrap;
+  min-width: max-content;
+  animation: marqueeSmooth 150s linear infinite;
   gap: 2rem;
+  will-change: transform; /* Optimize for animation */
 }
 
-@keyframes marquee {
+@keyframes marqueeSmooth {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-50%); /* Move exactly half the width */
+    transform: translateX(-66.666%);
   }
 }
 
@@ -856,6 +859,22 @@ a.productivity-features__bento-grid-item::before {
 
 .faq-accordion__tab-inner-content.active {
   display: block;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faq-accordion__tab-inner-content.active {
+  display: block;
+  animation: fadeSlideIn 0.3s ease;
 }
 
 .faq-accordion__tab-item-closed {
@@ -942,7 +961,7 @@ a.productivity-features__bento-grid-item::before {
 /* CTA Section */
 
 .cta__container {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -1075,7 +1094,7 @@ a.productivity-features__bento-grid-item::before {
 .footer__copyright-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 2.5rem;
   color: var(--faint-white-color);
   font-size: 0.9rem;
@@ -1100,9 +1119,173 @@ a.productivity-features__bento-grid-item::before {
   line-height: 1.8;
 }
 
+.footer__disclaimer {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  margin: 0;
+  line-height: 1.4;
+}
+
 /* Media Queries */
 
 @media (max-width: 992px) {
+  /* Navbar */
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar {
+    padding: 1rem 1.4rem 0.6rem;
+  }
+
+  .navbar__buttons {
+    display: none;
+  }
+
+  .navbar__mobile-menu {
+    display: block;
+  }
+
+  .hero__container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Features */
+
+  .features {
+    padding: 4rem 1rem;
+  }
+
+  .features__description {
+    padding-bottom: 0;
+  }
+
+  .features__grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+
+  /* Productivity Features */
+
+  .productivity-features__container {
+    padding: 2rem;
+  }
+
+  .productivity-features__heading {
+    padding-top: 1rem;
+  }
+
+  .productivity-features__bento-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two column layout */
+    grid-template-rows: auto; /* Auto rows */
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+  }
+
+  /* Reset grid spans for mobile - all items take full width */
+  .productivity-features__bento-grid-item:nth-child(1) {
+    grid-column: span 2; /* Take entire row */
+  }
+
+  /* All other items take single column (2 per row) */
+  .productivity-features__bento-grid-item:nth-child(n + 2) {
+    grid-column: span 1; /* Single column each */
+  }
+
+  .productivity-features__bento-grid-item {
+    padding: 2rem; /* Increased padding for less cramped feeling */
+    height: auto; /* Allow height to adjust to content */
+    min-height: 320px;
+  }
+
+  /* Details */
+  .details__grid-item:nth-child(odd) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .details__grid-item:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .details__grid-item:last-child {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .details__grid {
+    text-items: center;
+  }
+
+  /* Integrations */
+
+  .integrations__container {
+    padding: 2rem 2rem;
+  }
+
+  /* Testimonials */
+  .testimonials__container {
+    padding: 4rem 0;
+  }
+
+  /* FAQ */
+  .faq__container {
+    padding: 2rem 2rem;
+  }
+
+  .faq-accordion__main-container {
+    width: 680px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    overflow: hidden;
+  }
+
+  /* CTA */
+  .cta__container {
+    padding: 4rem 2rem;
+  }
+
+  .cta__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cta__button.btn--primary {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  .footer__main-container {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__copyright-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer__copyright {
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1110,9 +1293,14 @@ a.productivity-features__bento-grid-item::before {
     font-size: 2.5rem !important;
     font-weight: 300;
   }
+
   /* Navbar */
   .navbar__menu {
     display: none;
+  }
+
+  .navbar {
+    padding: 1rem 1.4rem 0.6rem;
   }
 
   .navbar__buttons {
@@ -1132,6 +1320,15 @@ a.productivity-features__bento-grid-item::before {
   .hero__container {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .hero__description {
+    font-size: 1.2rem;
   }
 
   /* Features */
@@ -1259,6 +1456,38 @@ a.productivity-features__bento-grid-item::before {
   .footer__copyright-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
+  }
+
+  .footer__copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 448px) {
+  h2 {
+    font-size: 2.2rem !important;
+  }
+
+  /* Hero */
+  .hero__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    /* padding: 1.5rem 2rem 0.8rem; */
+    padding: 1rem 1.4rem 0.6rem;
   }
 }

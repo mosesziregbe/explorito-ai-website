@@ -24,12 +24,14 @@ function navToggle() {
 }
 
 // Close menu when clicking outside of it
-// document.addEventListener('click', (e) => {
-//   if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
-//     hamburger.classList.remove('open');
-//     mobileMenu.classList.remove('active');
-//   }
-// });
+function closeMenuModal() {
+  document.addEventListener('click', (e) => {
+    if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+      menuBtn.classList.remove('open');
+      mobileMenu.classList.remove('active');
+    }
+  });
+}
 
 // set current year for copyright
 
@@ -144,4 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Navigation Toggle
   navToggle();
+
+  // Close menu modal
+  closeMenuModal();
 });
