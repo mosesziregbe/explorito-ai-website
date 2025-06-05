@@ -1146,7 +1146,7 @@ a.productivity-features__bento-grid-item::before {
 
   .features__grid {
     grid-template-columns: 1fr;
-    padding: 0;
+    padding-bottom: 1rem;
   }
 
   /* Productivity Features */
