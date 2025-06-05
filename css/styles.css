@@ -1010,7 +1010,7 @@ a.productivity-features__bento-grid-item::before {
 
 .navbar__company-logo img,
 .footer__company-logo img {
-  height: 48px;
+  height: 36px;
   max-width: 120px;
   width: auto;
   object-fit: contain;
@@ -1019,7 +1019,7 @@ a.productivity-features__bento-grid-item::before {
 
 .navbar__company-name,
 .footer__company-name {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: lowercase;
   font-weight: 600;
 }
