@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorito - Your AI-powered search and productivity assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation  -->
+    <nav class="navbar">
+      <!-- navbar  -->
+      <div class="navbar__container container">
+        <div class="navbar__left">
+          <!-- Logo, Menu items -->
+          <div class="navbar__logo">
+            <a href="#" class="navbar__company-logo"
+              ><img src="./images/explorito-icon-wobg.png" alt="" />
+            </a>
+            <h4 class="navbar__company-name">Explorito</h4>
+          </div>
+          <!-- Menu Items -->
+          <div class="navbar__menu">
+            <ul class="navbar__menu-list">
+              <li class="navbar__menu-item">
+                <a href="" class="navbar__menu-link">Integrations</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="" class="navbar__menu-link">Pricing</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="" class="navbar__menu-link">Security</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="#details" class="navbar__menu-link">Details</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar__right">
+          <!-- Sign up, Download button -->
+          <div class="navbar__buttons">
+            <a href="" class="navbar__button btn--ghost">Sign In</a>
+            <a href="" class="navbar__button btn--solid">Download for free</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu  & Hamburger Icon-->
+        <div class="navbar__mobile-menu">
+          <!-- Hamburger -->
+          <button id="menu-btn" type="button" class="hamburger">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+          <!-- Mobile Menu Items  -->
+          <div class="navbar__mobile-menu-items">
+            <ul class="navbar__mobile-menu-list">
+              <li class="navbar__mobile-menu-item">
+                <a href="#integrations" class="navbar__mobile-menu-link"
+                  >Integrations</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="#" class="navbar__mobile-menu-link">Pricing</a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="#" class="navbar__mobile-menu-link">Security</a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="#details" class="navbar__mobile-menu-link">Details</a>
+              </li>
+            </ul>
+
+            <!-- Sign up, Download button -->
+            <div class="navbar__mobile-menu-buttons">
+              <a href="" class="navbar_mobile-menu-button btn--primary"
+                >Sign In&nbsp;&nbsp;></a
+              >
+              <a href="" class="navbar__mobile-menu-button btn--solid"
+                >Download for free</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Your AI copilot for
+            <span
+              class="hero__title--primary typewriter-container"
+              id="typewriter"
+              >Everything</span
+            >
+          </h1>
+          <p class="hero__description">
+            Lost in digital chaos? Discover it all in one place with Explorito,
+            your intelligent search and chat companion that turns information
+            overload into instant insights.
+          </p>
+          <div class="hero__buttons">
+            <a href="" class="hero__button btn--primary">Get Desktop App ></a>
+            <a href="" class="hero__button btn--secondary"
+              >For Teams&nbsp;&nbsp;></a
+            >
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="./images/projectkickstart.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Features Section  -->
+    <section class="features" id="features">
+      <div class="features__container container">
+        <div class="features__content">
+          <h4 class="features__heading">Features</h4>
+          <h2 class="features__title">Explore Faster. Discover Smarter.</h2>
+          <p class="features__description">
+            Your new favorite discovery tool. All your files, messages, and
+            knowledge in one unified search experience. Find what you need and
+            let AI help you understand, analyze, and act on it instantly.
+          </p>
+          <!-- Features Grid  -->
+          <div class="features__grid">
+            <!-- Grid Item 1  -->
+            <div class="features__grid-item">
+              <div class="features__grid-item-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="features__grid-item-text">
+                <h4 class="features__grid-item-text-title">Universal Search</h4>
+                <div class="features__grid-item-text-description">
+                  Lightning-fast search across all your folders, apps, and cloud
+                  storage
+                </div>
+              </div>
+            </div>
+            <!-- Grid Item 2  -->
+            <div class="features__grid-item">
+              <div class="features__grid-item-icon">
+                <i class="fa-regular fa-message"></i>
+              </div>
+              <div class="features__grid-item-text">
+                <h4 class="features__grid-item-text-title">AI Document Chat</h4>
+                <div class="features__grid-item-text-description">
+                  Ask questions about your files, get summaries and insights in
+                  seconds
+                </div>
+              </div>
+            </div>
+            <!-- Grid Item 3  -->
+            <div class="features__grid-item">
+              <div class="features__grid-item-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="features__grid-item-text">
+                <h4 class="features__grid-item-text-title">
+                  Custom AI Explorers
+                </h4>
+                <div class="features__grid-item-text-description">
+                  Create personalized AI assistants for writing, research, and
+                  workflows
+                </div>
+              </div>
+            </div>
+            <!-- Grid Item 4  -->
+            <div class="features__grid-item">
+              <div class="features__grid-item-icon">
+                <i class="fa-solid fa-tower-broadcast"></i>
+              </div>
+              <div class="features__grid-item-text">
+                <h4 class="features__grid-item-text-title">
+                  Unified Communications
+                </h4>
+                <div class="features__grid-item-text-description">
+                  Search all email accounts and join meetings with one shortcut
+                </div>
+              </div>
+            </div>
+            <!-- Grid Item 5  -->
+            <div class="features__grid-item">
+              <div class="features__grid-item-icon">
+                <i class="fa-solid fa-file"></i>
+              </div>
+              <div class="features__grid-item-text">
+                <h4 class="features__grid-item-text-title">Smart Spaces</h4>
+                <div class="features__grid-item-text-description">
+                  Organize files and messages into virtual collections without
+                  moving them
+                </div>
+              </div>
+            </div>
+            <!-- Grid Item 6 -->
+            <div class="features__grid-item">
+              <div class="features__grid-item-icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="features__grid-item-text">
+                <h4 class="features__grid-item-text-title">Web Discovery</h4>
+                <div class="features__grid-item-text-description">
+                  Search Google, Wikipedia, and more with keyboard shortcuts
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productivity Features Section  -->
+    <section class="productivity-features" id="productivity-features">
+      <div class="productivity-features__container container">
+        <div class="productivity-features__content">
+          <h4 class="productivity-features__heading">Productivity Features</h4>
+          <h2 class="productivity-features__title">Stay in your flow</h2>
+          <p class="productivity-features__description">
+            Boost productivity with features designed to keep you focused and
+            efficient.
+          </p>
+        </div>
+        <div class="productivity-features__bento-content">
+          <div class="productivity-features__bento-grid">
+            <!-- Bento Grid Item 1  -->
+            <div class="productivity-features__bento-grid-item">
+              <div class="productivity-features__bento-grid-item-image">
+                <img src="./images/keyboard.png" />
+              </div>
+              <div class="productivity-features__bento-grid-item-text">
+                <div class="productivity-features__bento-grid-item-text-title">
+                  Quick Launch (Alt + Space)
+                </div>
+                <div
+                  class="productivity-features__bento-grid-item-text-description"
+                >
+                  Open search and AI assistant instantly, no window switching
+                </div>
+              </div>
+            </div>
+            <!-- Bento Grid Item 2  -->
+            <div class="productivity-features__bento-grid-item">
+              <div class="productivity-features__bento-grid-item-image">
+                <img src="./images/askexplorito.png" />
+              </div>
+              <div class="productivity-features__bento-grid-item-text">
+                <div class="productivity-features__bento-grid-item-text-title">
+                  AI Assistant
+                </div>
+                <div
+                  class="productivity-features__bento-grid-item-text-description"
+                >
+                  Access cloud AI or use local models for enhanced privacy
+                </div>
+              </div>
+            </div>
+            <!-- Bento Grid Item 3  -->
+            <div class="productivity-features__bento-grid-item">
+              <div class="productivity-features__bento-grid-item-image">
+                <img src="./images/searchapps.png" />
+              </div>
+              <div class="productivity-features__bento-grid-item-text">
+                <div class="productivity-features__bento-grid-item-text-title">
+                  App Launcher
+                </div>
+                <div
+                  class="productivity-features__bento-grid-item-text-description"
+                >
+                  Launch any application by typing its name
+                </div>
+              </div>
+            </div>
+            <!-- Bento Grid Item 4  -->
+            <div class="productivity-features__bento-grid-item">
+              <div class="productivity-features__bento-grid-item-image">
+                <img src="./images/calendar.png" />
+              </div>
+              <div class="productivity-features__bento-grid-item-text">
+                <div class="productivity-features__bento-grid-item-text-title">
+                  Meeting Jump
+                </div>
+                <div
+                  class="productivity-features__bento-grid-item-text-description"
+                >
+                  Join video calls with a single keyboard shortcut
+                </div>
+              </div>
+            </div>
+            <!-- Bento Grid Item 5  -->
+            <div class="productivity-features__bento-grid-item">
+              <div class="productivity-features__bento-grid-item-image">
+                <img src="./images/securitylock.png" />
+              </div>
+              <div class="productivity-features__bento-grid-item-text">
+                <div class="productivity-features__bento-grid-item-text-title">
+                  Secure by default
+                </div>
+                <div
+                  class="productivity-features__bento-grid-item-text-description"
+                >
+                  Keep your data safe on your computer with our security
+                  features.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details Section  -->
+    <section class="details" id="details">
+      <div class="details__container container">
+        <div class="details__grid">
+          <!-- Grid Item 1 -->
+          <div class="details__grid-item">
+            <div class="details__grid-content">
+              <div class="details__grid-item-text">
+                <h4 class="details__grid-item-text-heading">
+                  Email Management
+                </h4>
+                <h2 class="details__grid-item-text-title">
+                  All Your Email, One Inbox
+                </h2>
+                <p class="details__grid-item-text-description">
+                  Search, reply, and manage emails from multiple accounts. Let
+                  AI craft responses automatically.
+                </p>
+              </div>
+            </div>
+            <div class="details__grid-item-image">
+              <img src="./images/email-feature.png" alt="" />
+            </div>
+          </div>
+          <!-- Grid Item 2 -->
+          <div class="details__grid-item">
+            <div class="details__grid-content">
+              <div class="details__grid-item-text">
+                <h4 class="details__grid-item-text-heading">Search Power</h4>
+                <h2 class="details__grid-item-text-title">
+                  Find Everything, Instantly
+                </h2>
+                <p class="details__grid-item-text-description">
+                  One search across all folders and applications. Search file
+                  contents, scan documents, and use natural language queries.
+                </p>
+              </div>
+            </div>
+            <div class="details__grid-item-image">
+              <img src="./images/search-feature.png" alt="" />
+            </div>
+          </div>
+          <!-- Grid Item 3 -->
+          <div class="details__grid-item">
+            <div class="details__grid-content">
+              <div class="details__grid-item-text">
+                <h4 class="details__grid-item-text-heading">Organization</h4>
+                <h2 class="details__grid-item-text-title">Smart Spaces</h2>
+                <p class="details__grid-item-text-description">
+                  Tag and organize your most important files for instant access
+                  without moving them from their original locations.
+                </p>
+              </div>
+            </div>
+            <div class="details__grid-item-image">
+              <img src="./images/spaces-feature.png" alt="" />
+            </div>
+          </div>
+          <!-- Grid Item 4 -->
+          <div class="details__grid-item">
+            <div class="details__grid-content">
+              <div class="details__grid-item-text">
+                <h4 class="details__grid-item-text-heading">
+                  AI Assistant Deep Dive
+                </h4>
+                <h2 class="details__grid-item-text-title">
+                  Work Smarter with AI
+                </h2>
+                <p class="details__grid-item-text-description">
+                  Access intelligent chat and get instant answers about your
+                  documents. Create custom AI assistants for any workflow.
+                </p>
+                <a href="#" class="details-grid-item-text-link"
+                  >Learn More&nbsp;&nbsp;></a
+                >
+              </div>
+            </div>
+            <div class="details__grid-item-image">
+              <img src="./images/ai-feature.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section class="integrations" id="integrations">
+      <div class="integrations__container container">
+        <div class="integrations__content">
+          <h4 class="integrations__heading">Integrations</h4>
+          <h2 class="integrations__title">Works with everything you use</h2>
+          <p class="integrations__description">
+            Explorito connects with all your favorite apps and services. Get
+            productive from day one!
+          </p>
+          <a href="#" class="integrations__link btn--primary"
+            >Explore all integrations&nbsp;&nbsp;></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials__container">
+        <div class="testimonials__content">
+          <h4 class="testimonials__heading">Testimonials</h4>
+          <h2 class="testimonials__title">
+            Stop wasting 20% of your time searching
+          </h2>
+          <p class="testimonials__description">
+            Join thousands of explorers who've reclaimed their productivity with
+            Explorito.
+          </p>
+        </div>
+        <!-- testimonials boxes -->
+        <div class="testimonial__swiper-main-container">
+          <div class="testimonials__swiper">
+            <div class="testimonials__swiper-wrapper">
+              <!-- Testimonial 1 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  Explorito cut my daily file hunting from 30 minutes to 30
+                  seconds. The AI chat feature helps me understand complex
+                  documents instantly without reading everything.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    Sarah Chen
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Product Manager at TechFlow
+                  </h4>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  As a freelancer with files everywhere, Explorito's unified
+                  search is a lifesaver. The custom AI assistants have
+                  completely transformed how I write proposals and client
+                  emails.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    Marcus Rodriguez
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Digital Marketing Consultant
+                  </h4>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  Our team went from drowning in scattered messages to finding
+                  anything in seconds. The Alt+Space shortcut is now essential
+                  for our entire workflow.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    Emily Watson
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Operations Director at StartupLab
+                  </h4>
+                </div>
+              </div>
+              <!-- Testimonial 4 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  I was skeptical about another productivity tool, but Explorito
+                  actually delivers on its promises. It's replaced 3 other
+                  organizational tools while keeping my data secure on my
+                  device.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    David Kim
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Software Engineer at DataCore Systems
+                  </h4>
+                </div>
+              </div>
+              <!-- Duplicate Testimonials  -->
+              <!-- Testimonial 1 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  Explorito cut my daily file hunting from 30 minutes to 30
+                  seconds. The AI chat feature helps me understand complex
+                  documents instantly without reading everything.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    Sarah Chen
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Product Manager at TechFlow
+                  </h4>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  As a freelancer with files everywhere, Explorito's unified
+                  search is a lifesaver. The custom AI assistants have
+                  completely transformed how I write proposals and client
+                  emails.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    Marcus Rodriguez
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Digital Marketing Consultant
+                  </h4>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  Our team went from drowning in scattered messages to finding
+                  anything in seconds. The Alt+Space shortcut is now essential
+                  for our entire workflow.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    Emily Watson
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Operations Director at StartupLab
+                  </h4>
+                </div>
+              </div>
+              <!-- Testimonial 4 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  I was skeptical about another productivity tool, but Explorito
+                  actually delivers on its promises. It's replaced 3 other
+                  organizational tools while keeping my data secure on my
+                  device.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    David Kim
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Software Engineer at DataCore Systems
+                  </h4>
+                </div>
+              </div>
+              <!-- Duplicate Testimonials  -->
+              <!-- Testimonial 1 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  Explorito cut my daily file hunting from 30 minutes to 30
+                  seconds. The AI chat feature helps me understand complex
+                  documents instantly without reading everything.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    Sarah Chen
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Product Manager at TechFlow
+                  </h4>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  As a freelancer with files everywhere, Explorito's unified
+                  search is a lifesaver. The custom AI assistants have
+                  completely transformed how I write proposals and client
+                  emails.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    Marcus Rodriguez
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Digital Marketing Consultant
+                  </h4>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  Our team went from drowning in scattered messages to finding
+                  anything in seconds. The Alt+Space shortcut is now essential
+                  for our entire workflow.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    Emily Watson
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Operations Director at StartupLab
+                  </h4>
+                </div>
+              </div>
+              <!-- Testimonial 4 -->
+              <div class="testimonials__swiper-slide-item">
+                <p class="testimonials__swiper-slide-item-text">
+                  I was skeptical about another productivity tool, but Explorito
+                  actually delivers on its promises. It's replaced 3 other
+                  organizational tools while keeping my data secure on my
+                  device.
+                </p>
+                <div class="testimonials__swiper-slide-item-details">
+                  <h4 class="testimonials__swiper-slide-item-details-name">
+                    David Kim
+                  </h4>
+                  <h4 class="testimonials__swiper-slide-item-details-company">
+                    Software Engineer at DataCore Systems
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section  -->
+    <section class="faq" id="faq">
+      <div class="faq__container container">
+        <div class="faq__content">
+          <h4 class="faq__heading">FAQ</h4>
+          <h2 class="faq__title">Everything you need to know</h2>
+          <p class="faq__description">
+            Your questions about Explorito, answered.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-accordion">
+      <!-- Main Container  -->
+      <div class="faq-accordion__main-container">
+        <!-- Accordion Container  -->
+        <div class="faq-accordion__container">
+          <!-- Tab 1 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Is the free plan really free?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+              <p class="faq-accordion__tab-inner-content">
+                Yes - no credit card, no sneaky upgrades, no limits that matter.
+              </p>
+            </div>
+          </div>
+          <!-- Tab 2 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Do you store my data in the Cloud?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+
+              <p class="faq-accordion__tab-inner-content">
+                Your data stays local unless you choose encrypted cloud sync.
+              </p>
+            </div>
+          </div>
+          <!-- Tab 3 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Desktop app vs Team Workspaces?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+
+              <p class="faq-accordion__tab-inner-content">
+                Desktop is personal AI, Workspaces are for team collaboration.
+              </p>
+            </div>
+          </div>
+          <!-- Tab 4 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Which apps do you support?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+
+              <p class="faq-accordion__tab-inner-content">
+                50+ apps including Slack, Gmail, Dropbox, and your niche tools.
+              </p>
+            </div>
+          </div>
+          <!-- Tab 5 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Do you offer team discounts?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+
+              <p class="faq-accordion__tab-inner-content">
+                Teams of 5+ get up to 40% off.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+      <div class="cta__container container">
+        <div class="cta__content">
+          <div class="cta__text">
+            <div class="cta__logo">
+              <img src="./images/explorito-icon-wobg.png" alt="" />
+            </div>
+            <div class="cta__title">Ready to Start Exploring?</div>
+            <div class="cta__description">
+              Download Explorito for free, or get a team workspace to explore
+              together.
+            </div>
+          </div>
+          <div class="cta__buttons">
+            <a href="" class="cta__button btn--primary">Download for free ></a>
+            <a href="" class="cta__button btn--secondary"
+              >For Teams&nbsp;&nbsp;></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__main-container">
+          <div class="footer__logos">
+            <div class="footer__company-logo">
+              <a href="#"
+                ><img src="./images/explorito-icon-wobg.png" alt="" />
+              </a>
+              <h4 class="footer__company-name">Explorito</h4>
+            </div>
+            <div class="footer__social">
+              <a href="" class="footer__social-link"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="" class="footer__social-link">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="" class="footer__social-link"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Quick Links</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="#features" class="footer__links-link">Features</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#productivity-features" class="footer__links-link"
+                  >Productivity features</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="#details" class="footer__links-link">Details</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#integrations" class="footer__links-link"
+                  >Integrations</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="#testimonials" class="footer__links-link"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="#faq" class="footer__links-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Resources</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Privacy policy</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">User guide</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Affiliates</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Students</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Company</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">About</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Contact</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Blog</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Terms of service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright-content">
+            <div class="footer__copyright-content-left">
+              <i class="fa-solid fa-cookie-bite"></i>
+              <p class="footer__copyright-text">
+                &copy; <span class="footer__copyright-year"></span> Explorito -
+                All rights reserved
+              </p>
+            </div>
+            <div class="footer__copyright-right">
+              <p class="footer__built-for-text">Built for Digital Explorers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
