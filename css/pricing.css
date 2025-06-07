@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* Pricing  */
 
 .pricing {
@@ -275,7 +280,7 @@
   }
 
   .pricing__grid .pricing__card:nth-child(2) {
-    width: 82vw;
+    width: 70vw;
     min-height: 700px;
   }
 
