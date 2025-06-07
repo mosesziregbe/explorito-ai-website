@@ -252,27 +252,38 @@ body {
 
   .pricing__card {
     width: 70vw;
+    min-width: unset; /* Remove the 400px min-width constraint */
   }
 
   .pricing__grid .pricing__card:nth-child(2) {
     width: 80vw;
     min-height: 700px;
   }
+
+  /* Override the base min-width for side cards too */
+  .pricing__card:nth-child(1),
+  .pricing__card:nth-child(3) {
+    min-width: unset;
+  }
 }
 
-/* For smaller mobile devices */
+/* For mobile devices 576px and below */
 @media screen and (max-width: 576px) {
+  .pricing {
+    padding: 6rem 1rem 2rem; /* Reduce horizontal padding */
+    box-sizing: border-box;
+  }
+
   .pricing__grid {
-    padding: 0 1rem;
-    /* Less padding on very small screens */
+    padding: 0 1rem; /* Less padding on small screens */
     gap: 1.5rem;
     box-sizing: border-box;
   }
 
   .pricing__card {
     padding: 1.25rem; /* Reduce padding inside cards */
-
     box-sizing: border-box;
+    width: 85vw; /* Make cards slightly wider on mobile */
   }
 
   .pricing__card-border {
@@ -280,16 +291,31 @@ body {
   }
 
   .pricing__grid .pricing__card:nth-child(2) {
-    width: 70vw;
+    width: 90vw; /* Middle card slightly larger but not too big */
     min-height: 700px;
   }
+}
 
-  /* .pricing {
-    padding: 10rem 4rem 4rem;
-  } */
+/* For very small mobile devices - 375px and below */
+@media screen and (max-width: 375px) {
+  .pricing__grid .pricing__card {
+    width: 100% !important; /* All cards same width */
+    min-width: unset !important;
+    max-width: 340px; /* Prevent cards from being too wide */
+  }
+
+  .pricing__grid .pricing__card:nth-child(2) {
+    width: 100% !important; /* Same width as other cards */
+    min-width: unset !important;
+    max-width: 340px;
+    min-height: 700px; /* Keep the height for content */
+  }
+
+  .pricing__grid {
+    padding: 0 0.5rem; /* Even less padding */
+  }
 
   .pricing {
-    padding: 6rem 1rem 2rem; /* reduce horizontal padding */
-    box-sizing: border-box;
+    padding: 6rem 0.5rem 2rem;
   }
 }
