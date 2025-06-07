@@ -203,6 +203,10 @@
   display: inline-block;
 }
 
+.pricing--padding {
+  padding-bottom: 6rem;
+}
+
 /* Between 1200px and 993px - Cards can shrink/grow */
 @media (max-width: 1200px) and (min-width: 993px) {
   .pricing__grid {
@@ -236,11 +240,11 @@
   }
 
   .pricing__card {
-    width: 80vw;
+    width: 70vw;
   }
 
   .pricing__grid .pricing__card:nth-child(2) {
-    width: 90vw;
+    width: 80vw;
     min-height: 700px;
   }
 }
@@ -248,7 +252,7 @@
 /* For smaller mobile devices */
 @media screen and (max-width: 576px) {
   .pricing__grid {
-    /* padding: 0 1rem;  */
+    padding: 0 4rem;
     /* Less padding on very small screens */
     gap: 1.5rem;
   }
@@ -259,5 +263,9 @@
 
   .pricing__card-border {
     margin: 0 0.5rem; /* Adjust border margins */
+  }
+
+  .pricing {
+    padding: 10rem 4rem 4rem;
   }
 }

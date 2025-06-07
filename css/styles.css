@@ -961,7 +961,7 @@ a.productivity-features__bento-grid-item::before {
 /* CTA Section */
 
 .cta__container {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 6rem;
   text-align: center;
 }
 
@@ -1253,7 +1253,7 @@ a.productivity-features__bento-grid-item::before {
 
   /* CTA */
   .cta__container {
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 6rem;
   }
 
   .cta__buttons {
@@ -1431,7 +1431,7 @@ a.productivity-features__bento-grid-item::before {
 
   /* CTA */
   .cta__container {
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 6rem;
   }
 
   .cta__buttons {
