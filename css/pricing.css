@@ -266,6 +266,7 @@
 
   .pricing__card {
     padding: 1.25rem; /* Reduce padding inside cards */
+
     box-sizing: border-box;
   }
 
@@ -274,7 +275,7 @@
   }
 
   .pricing__grid .pricing__card:nth-child(2) {
-    width: 85vw;
+    width: 82vw;
     min-height: 700px;
   }
 
