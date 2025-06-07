@@ -29,7 +29,7 @@
         <div class="navbar__left">
           <!-- Logo, Menu items -->
           <div class="navbar__logo">
-            <a href="#" class="navbar__company-logo"
+            <a href="/" class="navbar__company-logo"
               ><img src="./images/explorito-icon-wobg.png" alt="" />
             </a>
             <a href="/"><h4 class="navbar__company-name">Explorito</h4></a>
@@ -47,7 +47,9 @@
                 <a href="" class="navbar__menu-link">Security</a>
               </li>
               <li class="navbar__menu-item">
-                <a href="#details" class="navbar__menu-link">Details</a>
+                <a href="./index.html#details" class="navbar__menu-link"
+                  >Details</a
+                >
               </li>
             </ul>
           </div>
@@ -77,9 +79,7 @@
                 >
               </li>
               <li class="navbar__mobile-menu-item">
-                <a href="./pricing.html" class="navbar__mobile-menu-link"
-                  >Pricing</a
-                >
+                <a href="#" class="navbar__mobile-menu-link">Pricing</a>
               </li>
               <li class="navbar__mobile-menu-item">
                 <a href="#" class="navbar__mobile-menu-link">Security</a>
@@ -103,331 +103,200 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-      <div class="hero__container container">
-        <div class="hero__content">
-          <h1 class="hero__title">
-            Your AI copilot for
-            <span
-              class="hero__title--primary typewriter-container"
-              id="typewriter"
-              >Everything</span
+    <!-- Pricing Section  -->
+    <section class="pricing" id="pricing">
+      <div class="pricing__container container">
+        <div class="pricing__content">
+          <h4 class="pricing__heading">Pricing</h4>
+          <h2 class="pricing__title">Your AI-Powered Search Companion.</h2>
+          <p class="pricing__description">
+            Scale your exploration with advanced features, enhanced AI
+            capabilities, and team collaboration tools.
+          </p>
+        </div>
+        <div class="pricing__flex-container">
+          <!-- Pricing Card Grid -->
+          <div class="pricing__grid-container">
+            <div class="pricing__grid">
+              <!-- Pricing Card 1 -->
+              <div class="pricing__card">
+                <!-- upper container -->
+                <div class="pricing__card-text">
+                  <h4 class="pricing__card-title">Free</h4>
+                  <p class="pricing__card-description">
+                    Perfect for getting started
+                  </p>
+                </div>
+                <div class="pricing__card-price-box">
+                  <h4 class="pricing__card-price">$0<span>/month</span></h4>
+                  <p class="pricing__card-price-details">
+                    No credit card needed
+                  </p>
+                </div>
+                <div class="pricing__card-border"></div>
+                <!-- Lower container  -->
+                <div class="pricing__card-list">
+                  <p class="pricing__card-list-text">What's included:</p>
+                  <ul class="pricing__card-list-items">
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Connect up to 3 data sources
+                    </li>
+
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Basic AI search across your content
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Quick app launcher
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Smart AI Assistant
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Community support
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing__card-button">
+                  <a href="#" class="btn--solid">Download For Free</a>
+                </div>
+              </div>
+              <!-- Pricing Card 2 -->
+              <div class="pricing__card pricing__card--popular">
+                <!-- upper container -->
+                <div class="pricing__card-text">
+                  <h4 class="pricing__card-title">Explorer</h4>
+                  <p class="pricing__card-description">Most Popular Choice</p>
+                </div>
+                <div class="pricin__card-price-box">
+                  <h4 class="pricing__card-price">$12<span>/month</span></h4>
+                  <p class="pricing__card-price-details">
+                    $144 billed annually (save 20%)
+                  </p>
+                </div>
+                <div class="pricing__card-border"></div>
+                <!-- Lower container  -->
+                <div class="pricing__card-list">
+                  <p class="pricing__card-list-text">
+                    Everything in free, plus:
+                  </p>
+                  <ul class="pricing__card-list-items">
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Unlimited data source connections
+                    </li>
+
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Advanced AI Assistant with memory
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Deep content analysis
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Priority search results
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Email support
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Custom integrations
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing__card-button">
+                  <a href="#" class="btn--primary">Try For Free</a>
+                </div>
+              </div>
+              <!-- Pricing Card 3 -->
+              <div class="pricing__card">
+                <!-- upper container -->
+                <div class="pricing__card-text">
+                  <h4 class="pricing__card-title">Team</h4>
+                  <p class="pricing__card-description">
+                    Built for collaboration
+                  </p>
+                </div>
+                <div class="pricin__card-price-box">
+                  <h4 class="pricing__card-price">
+                    $15<span>/user/month</span>
+                  </h4>
+                  <p class="pricing__card-price-details">
+                    $180 per user billed annually
+                  </p>
+                </div>
+                <div class="pricing__card-border"></div>
+                <!-- Lower container  -->
+                <div class="pricing__card-list">
+                  <p class="pricing__card-list-text">
+                    Everything in Explorer for 3+ users, plus:
+                  </p>
+                  <ul class="pricing__card-list-items">
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Shared knowledge bases
+                    </li>
+
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Team workspace management
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Advanced user permissions
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      100GB secure cloud storage
+                    </li>
+                    <li class="pricing__card-list-item">
+                      <i class="fa-solid fa-check"></i>
+                      Priority customer support
+                    </li>
+                  </ul>
+                </div>
+                <div class="pricing__card-button">
+                  <a href="#" class="btn--solid">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="pricing__trial-container">
+              <svg
+                class="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="rgb(0, 184, 52)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.5 11.5 11 13l4-3.5M12 20a16.405 16.405 0 0 1-5.092-5.804A16.694 16.694 0 0 1 5 6.666L12 4l7 2.667a16.695 16.695 0 0 1-1.908 7.529A16.406 16.406 0 0 1 12 20Z"
+                />
+              </svg>
+
+              <p class="pricing__trial-text">
+                14-day free trial. Cancel anytime.
+              </p>
+            </div>
+          </div>
+          <div class="pricing__enterprise-button">
+            <a href="" class="btn--ghost"
+              >Need custom enterprise solutions?&nbsp;&nbsp;></a
             >
-          </h1>
-          <p class="hero__description">
-            Lost in digital chaos? Discover it all in one place with Explorito,
-            your intelligent search and chat companion that turns information
-            overload into instant insights.
-          </p>
-          <div class="hero__buttons">
-            <a href="" class="hero__button btn--primary">Get Desktop App ></a>
-            <a href="" class="hero__button btn--secondary"
-              >For Teams&nbsp;&nbsp;></a
-            >
           </div>
-        </div>
-        <div class="hero__image">
-          <img src="./images/projectkickstart.png" alt="" />
-        </div>
-      </div>
-    </header>
-
-    <!-- Features Section  -->
-    <section class="features" id="features">
-      <div class="features__container container">
-        <div class="features__content">
-          <h4 class="features__heading">Features</h4>
-          <h2 class="features__title">Explore Faster. Discover Smarter.</h2>
-          <p class="features__description">
-            Your new favorite discovery tool. All your files, messages, and
-            knowledge in one unified search experience. Find what you need and
-            let AI help you understand, analyze, and act on it instantly.
-          </p>
-          <!-- Features Grid  -->
-          <div class="features__grid">
-            <!-- Grid Item 1  -->
-            <div class="features__grid-item">
-              <div class="features__grid-item-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="features__grid-item-text">
-                <h4 class="features__grid-item-text-title">Universal Search</h4>
-                <div class="features__grid-item-text-description">
-                  Lightning-fast search across all your folders, apps, and cloud
-                  storage
-                </div>
-              </div>
-            </div>
-            <!-- Grid Item 2  -->
-            <div class="features__grid-item">
-              <div class="features__grid-item-icon">
-                <i class="fa-regular fa-message"></i>
-              </div>
-              <div class="features__grid-item-text">
-                <h4 class="features__grid-item-text-title">AI Document Chat</h4>
-                <div class="features__grid-item-text-description">
-                  Ask questions about your files, get summaries and insights in
-                  seconds
-                </div>
-              </div>
-            </div>
-            <!-- Grid Item 3  -->
-            <div class="features__grid-item">
-              <div class="features__grid-item-icon">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
-              </div>
-              <div class="features__grid-item-text">
-                <h4 class="features__grid-item-text-title">
-                  Custom AI Explorers
-                </h4>
-                <div class="features__grid-item-text-description">
-                  Create personalized AI assistants for writing, research, and
-                  workflows
-                </div>
-              </div>
-            </div>
-            <!-- Grid Item 4  -->
-            <div class="features__grid-item">
-              <div class="features__grid-item-icon">
-                <i class="fa-solid fa-tower-broadcast"></i>
-              </div>
-              <div class="features__grid-item-text">
-                <h4 class="features__grid-item-text-title">
-                  Unified Communications
-                </h4>
-                <div class="features__grid-item-text-description">
-                  Search all email accounts and join meetings with one shortcut
-                </div>
-              </div>
-            </div>
-            <!-- Grid Item 5  -->
-            <div class="features__grid-item">
-              <div class="features__grid-item-icon">
-                <i class="fa-solid fa-file"></i>
-              </div>
-              <div class="features__grid-item-text">
-                <h4 class="features__grid-item-text-title">Smart Spaces</h4>
-                <div class="features__grid-item-text-description">
-                  Organize files and messages into virtual collections without
-                  moving them
-                </div>
-              </div>
-            </div>
-            <!-- Grid Item 6 -->
-            <div class="features__grid-item">
-              <div class="features__grid-item-icon">
-                <i class="fa-solid fa-globe"></i>
-              </div>
-              <div class="features__grid-item-text">
-                <h4 class="features__grid-item-text-title">Web Discovery</h4>
-                <div class="features__grid-item-text-description">
-                  Search Google, Wikipedia, and more with keyboard shortcuts
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Productivity Features Section  -->
-    <section class="productivity-features" id="productivity-features">
-      <div class="productivity-features__container container">
-        <div class="productivity-features__content">
-          <h4 class="productivity-features__heading">Productivity Features</h4>
-          <h2 class="productivity-features__title">Stay in your flow</h2>
-          <p class="productivity-features__description">
-            Boost productivity with features designed to keep you focused and
-            efficient.
-          </p>
-        </div>
-        <div class="productivity-features__bento-content">
-          <div class="productivity-features__bento-grid">
-            <!-- Bento Grid Item 1  -->
-            <div class="productivity-features__bento-grid-item">
-              <div class="productivity-features__bento-grid-item-image">
-                <img src="./images/keyboard.png" />
-              </div>
-              <div class="productivity-features__bento-grid-item-text">
-                <div class="productivity-features__bento-grid-item-text-title">
-                  Quick Launch (Alt + Space)
-                </div>
-                <div
-                  class="productivity-features__bento-grid-item-text-description"
-                >
-                  Open search and AI assistant instantly, no window switching
-                </div>
-              </div>
-            </div>
-            <!-- Bento Grid Item 2  -->
-            <div class="productivity-features__bento-grid-item">
-              <div class="productivity-features__bento-grid-item-image">
-                <img src="./images/askexplorito.png" />
-              </div>
-              <div class="productivity-features__bento-grid-item-text">
-                <div class="productivity-features__bento-grid-item-text-title">
-                  AI Assistant
-                </div>
-                <div
-                  class="productivity-features__bento-grid-item-text-description"
-                >
-                  Access cloud AI or use local models for enhanced privacy
-                </div>
-              </div>
-            </div>
-            <!-- Bento Grid Item 3  -->
-            <div class="productivity-features__bento-grid-item">
-              <div class="productivity-features__bento-grid-item-image">
-                <img src="./images/searchapps.png" />
-              </div>
-              <div class="productivity-features__bento-grid-item-text">
-                <div class="productivity-features__bento-grid-item-text-title">
-                  App Launcher
-                </div>
-                <div
-                  class="productivity-features__bento-grid-item-text-description"
-                >
-                  Launch any application by typing its name
-                </div>
-              </div>
-            </div>
-            <!-- Bento Grid Item 4  -->
-            <div class="productivity-features__bento-grid-item">
-              <div class="productivity-features__bento-grid-item-image">
-                <img src="./images/calendar.png" />
-              </div>
-              <div class="productivity-features__bento-grid-item-text">
-                <div class="productivity-features__bento-grid-item-text-title">
-                  Meeting Jump
-                </div>
-                <div
-                  class="productivity-features__bento-grid-item-text-description"
-                >
-                  Join video calls with a single keyboard shortcut
-                </div>
-              </div>
-            </div>
-            <!-- Bento Grid Item 5  -->
-            <div class="productivity-features__bento-grid-item">
-              <div class="productivity-features__bento-grid-item-image">
-                <img src="./images/securitylock.png" />
-              </div>
-              <div class="productivity-features__bento-grid-item-text">
-                <div class="productivity-features__bento-grid-item-text-title">
-                  Secure by default
-                </div>
-                <div
-                  class="productivity-features__bento-grid-item-text-description"
-                >
-                  Keep your data safe on your computer with our security
-                  features.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Details Section  -->
-    <section class="details" id="details">
-      <div class="details__container container">
-        <div class="details__grid">
-          <!-- Grid Item 1 -->
-          <div class="details__grid-item">
-            <div class="details__grid-content">
-              <div class="details__grid-item-text">
-                <h4 class="details__grid-item-text-heading">
-                  Email Management
-                </h4>
-                <h2 class="details__grid-item-text-title">
-                  All Your Email, One Inbox
-                </h2>
-                <p class="details__grid-item-text-description">
-                  Search, reply, and manage emails from multiple accounts. Let
-                  AI craft responses automatically.
-                </p>
-              </div>
-            </div>
-            <div class="details__grid-item-image">
-              <img src="./images/email-feature.png" alt="" />
-            </div>
-          </div>
-          <!-- Grid Item 2 -->
-          <div class="details__grid-item">
-            <div class="details__grid-content">
-              <div class="details__grid-item-text">
-                <h4 class="details__grid-item-text-heading">Search Power</h4>
-                <h2 class="details__grid-item-text-title">
-                  Find Everything, Instantly
-                </h2>
-                <p class="details__grid-item-text-description">
-                  One search across all folders and applications. Search file
-                  contents, scan documents, and use natural language queries.
-                </p>
-              </div>
-            </div>
-            <div class="details__grid-item-image">
-              <img src="./images/search-feature.png" alt="" />
-            </div>
-          </div>
-          <!-- Grid Item 3 -->
-          <div class="details__grid-item">
-            <div class="details__grid-content">
-              <div class="details__grid-item-text">
-                <h4 class="details__grid-item-text-heading">Organization</h4>
-                <h2 class="details__grid-item-text-title">Smart Spaces</h2>
-                <p class="details__grid-item-text-description">
-                  Tag and organize your most important files for instant access
-                  without moving them from their original locations.
-                </p>
-              </div>
-            </div>
-            <div class="details__grid-item-image">
-              <img src="./images/spaces-feature.png" alt="" />
-            </div>
-          </div>
-          <!-- Grid Item 4 -->
-          <div class="details__grid-item">
-            <div class="details__grid-content">
-              <div class="details__grid-item-text">
-                <h4 class="details__grid-item-text-heading">
-                  AI Assistant Deep Dive
-                </h4>
-                <h2 class="details__grid-item-text-title">
-                  Work Smarter with AI
-                </h2>
-                <p class="details__grid-item-text-description">
-                  Access intelligent chat and get instant answers about your
-                  documents. Create custom AI assistants for any workflow.
-                </p>
-                <a href="#" class="details-grid-item-text-link"
-                  >Learn More&nbsp;&nbsp;></a
-                >
-              </div>
-            </div>
-            <div class="details__grid-item-image">
-              <img src="./images/ai-feature.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Integrations Section -->
-    <section class="integrations" id="integrations">
-      <div class="integrations__container container">
-        <div class="integrations__content">
-          <h4 class="integrations__heading">Integrations</h4>
-          <h2 class="integrations__title">Works with everything you use</h2>
-          <p class="integrations__description">
-            Explorito connects with all your favorite apps and services. Get
-            productive from day one!
-          </p>
-          <a href="#" class="integrations__link btn--primary"
-            >Explore all integrations&nbsp;&nbsp;></a
-          >
         </div>
       </div>
     </section>
@@ -437,11 +306,9 @@
       <div class="testimonials__container">
         <div class="testimonials__content">
           <h4 class="testimonials__heading">Testimonials</h4>
-          <h2 class="testimonials__title">
-            Stop wasting 20% of your time searching
-          </h2>
+          <h2 class="testimonials__title">See what our users are saying</h2>
           <p class="testimonials__description">
-            Join thousands of explorers who've reclaimed their productivity with
+            Real experiences from people who've transformed their workflow with
             Explorito.
           </p>
         </div>
@@ -777,30 +644,6 @@
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta" id="cta">
-      <div class="cta__container container">
-        <div class="cta__content">
-          <div class="cta__text">
-            <div class="cta__logo">
-              <img src="./images/explorito-icon-wobg.png" alt="" />
-            </div>
-            <div class="cta__title">Ready to Start Exploring?</div>
-            <div class="cta__description">
-              Download Explorito for free, or get a team workspace to explore
-              together.
-            </div>
-          </div>
-          <div class="cta__buttons">
-            <a href="" class="cta__button btn--primary">Download for free ></a>
-            <a href="" class="cta__button btn--secondary"
-              >For Teams&nbsp;&nbsp;></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__container container">
@@ -828,10 +671,14 @@
             <h4 class="footer__title">Quick Links</h4>
             <ul class="footer__links-list">
               <li class="footer__links-item">
-                <a href="#features" class="footer__links-link">Features</a>
+                <a href="./index.html#features" class="footer__links-link"
+                  >Features</a
+                >
               </li>
               <li class="footer__links-item">
-                <a href="#productivity-features" class="footer__links-link"
+                <a
+                  href="./index.html#productivity-features"
+                  class="footer__links-link"
                   >Productivity features</a
                 >
               </li>
@@ -839,7 +686,7 @@
                 <a href="#details" class="footer__links-link">Details</a>
               </li>
               <li class="footer__links-item">
-                <a href="#integrations" class="footer__links-link"
+                <a href="./index.html#integrations" class="footer__links-link"
                   >Integrations</a
                 >
               </li>
@@ -849,7 +696,7 @@
                 >
               </li>
               <li class="footer__links-item">
-                <a href="#faq" class="footer__links-link">FAQ</a>
+                <a href="./index.html#faq" class="footer__links-link">FAQ</a>
               </li>
             </ul>
           </div>

@@ -62,6 +62,11 @@ const pauseTime = 1500;
 function type() {
   const element = document.getElementById('typewriter');
 
+  // Check if element exists before trying to use it
+  if (!element) {
+    return; // Exit if element doesn't exist
+  }
+
   if (!isDeleting) {
     // Typing
     currentWord = words[i].substring(0, j + 1);
@@ -135,8 +140,10 @@ function accordionContent() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Start the typewriter effect
-  type();
+  const typewriterElement = document.getElementById('typewriter');
+  if (typewriterElement) {
+    type(); // Start the typewriter effect
+  }
 
   // Accordion Content
   accordionContent();
