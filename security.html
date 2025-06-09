@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorito - Your AI-powered search and productivity assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/pricing.css" />
+    <link rel="stylesheet" href="./css/security.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation  -->
+    <nav class="navbar">
+      <!-- navbar  -->
+      <div class="navbar__container container">
+        <div class="navbar__left">
+          <!-- Logo, Menu items -->
+          <div class="navbar__logo">
+            <a href="/" class="navbar__company-logo"
+              ><img src="./images/explorito-icon-wobg.png" alt="" />
+            </a>
+            <a href="/"><h4 class="navbar__company-name">Explorito</h4></a>
+          </div>
+          <!-- Menu Items -->
+          <div class="navbar__menu">
+            <ul class="navbar__menu-list">
+              <li class="navbar__menu-item">
+                <a href="./#integrations" class="navbar__menu-link"
+                  >Integrations</a
+                >
+              </li>
+              <li class="navbar__menu-item">
+                <a href="pricing.html" class="navbar__menu-link">Pricing</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="#" class="navbar__menu-link">Security</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="./#details" class="navbar__menu-link">Details</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar__right">
+          <!-- Sign up, Download button -->
+          <div class="navbar__buttons">
+            <a href="" class="navbar__button btn--ghost">Sign In</a>
+            <a href="" class="navbar__button btn--solid">Download for free</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu  & Hamburger Icon-->
+        <div class="navbar__mobile-menu">
+          <!-- Hamburger -->
+          <button id="menu-btn" type="button" class="hamburger">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+          <!-- Mobile Menu Items  -->
+          <div class="navbar__mobile-menu-items">
+            <ul class="navbar__mobile-menu-list">
+              <li class="navbar__mobile-menu-item">
+                <a href="./#integrations" class="navbar__mobile-menu-link"
+                  >Integrations</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="pricing.html" class="navbar__mobile-menu-link"
+                  >Pricing</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="#" class="navbar__mobile-menu-link">Security</a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="./#details" class="navbar__mobile-menu-link"
+                  >Details</a
+                >
+              </li>
+            </ul>
+
+            <!-- Sign up, Download button -->
+            <div class="navbar__mobile-menu-buttons">
+              <a href="" class="navbar_mobile-menu-button btn--primary"
+                >Sign In&nbsp;&nbsp;></a
+              >
+              <a href="" class="navbar__mobile-menu-button btn--solid"
+                >Download for free</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Security Section  -->
+    <section class="security" id="security">
+      <div class="security__container container">
+        <div class="security__content">
+          <h4 class="security__heading">Security</h4>
+          <h2 class="security__title">
+            Your data remains under your complete control
+          </h2>
+          <p class="security__description">
+            Explorito is built with privacy at its core. Everything stays on
+            your device - we never access, store, or transmit your personal
+            information to our servers.
+          </p>
+        </div>
+        <div class="security__cards">
+          <!-- Security Card 1 -->
+          <div class="security__card">
+            <div class="security__card-icon-wrapper">
+              <ion-icon
+                name="lock-closed-outline"
+                class="security__card-icon"
+              ></ion-icon>
+            </div>
+            <div class="security__card-title">Local-Only data processing</div>
+            <div class="security__card-description">
+              All your files, emails, and app data are processed and indexed
+              locally on your own device. Nothing is ever uploaded to the cloud
+              or stored on external servers. Your information never leaves your
+              control.
+            </div>
+          </div>
+          <!-- Security Card 2 -->
+          <div class="security__card">
+            <div class="security__card-icon-wrapper">
+              <ion-icon
+                name="key-outline"
+                class="security__card-icon"
+              ></ion-icon>
+            </div>
+            <div class="security__card-title">
+              Enterprise-grade authentication
+            </div>
+            <div class="security__card-description">
+              We implement OAuth 2.0 authentication protocols for secure
+              connections to your third-party applications. This means direct,
+              encrypted communication between your device and services like
+              Google, Microsoft, and Slack - with no intermediary access.
+            </div>
+          </div>
+          <!-- Security Card 3 -->
+          <div class="security__card">
+            <div class="security__card-icon-wrapper">
+              <ion-icon
+                name="shield-outline"
+                class="security__card-icon"
+              ></ion-icon>
+            </div>
+            <div class="security__card-title">End-to-End Encryption</div>
+            <div class="security__card-description">
+              All data synchronization uses SSL/TLS encryption during transit.
+              When connecting to external services, your information is fully
+              encrypted from your device to the destination, ensuring complete
+              protection during data transfer.
+            </div>
+          </div>
+          <!-- Security Card 4 -->
+          <div class="security__card">
+            <div class="security__card-icon-wrapper">
+              <ion-icon
+                name="eye-off-outline"
+                class="security__card-icon"
+              ></ion-icon>
+            </div>
+            <div class="security__card-title">Zero-knowledge framework</div>
+            <div class="security__card-description">
+              Explorito operates on a zero-knowledge principle. Our team cannot
+              and will never access your data. Everything remains on your device
+              within your user profile, isolated from other users and completely
+              invisible to our systems.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section  -->
+    <section class="faq" id="faq">
+      <div class="faq__container container">
+        <div class="faq__content">
+          <h4 class="faq__heading">FAQ</h4>
+          <h2 class="faq__title">Everything you need to know</h2>
+          <p class="faq__description">
+            Find answers to frequently asked questions about Explorito's
+            functionality, privacy features, and supported integrations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-accordion pricing--padding">
+      <!-- Main Container  -->
+      <div class="faq-accordion__main-container">
+        <!-- Accordion Container  -->
+        <div class="faq-accordion__container">
+          <!-- Tab 1 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Is the free plan really free?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+              <p class="faq-accordion__tab-inner-content">
+                Yes - no credit card, no sneaky upgrades, no limits that matter.
+              </p>
+            </div>
+          </div>
+          <!-- Tab 2 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Do you store my data in the Cloud?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+
+              <p class="faq-accordion__tab-inner-content">
+                Your data stays local unless you choose encrypted cloud sync.
+              </p>
+            </div>
+          </div>
+          <!-- Tab 3 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Desktop app vs Team Workspaces?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+
+              <p class="faq-accordion__tab-inner-content">
+                Desktop is personal AI, Workspaces are for team collaboration.
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <!-- Tab 4 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Which apps do you support?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+
+              <p class="faq-accordion__tab-inner-content">
+                50+ apps including Slack, Gmail, Dropbox, and your niche tools.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Laborum, aut porro. Provident animi fugit ab fugiat ex delectus
+                libero excepturi!
+              </p>
+            </div>
+          </div>
+          <!-- Tab 5 -->
+          <div class="faq-accordion__tab-item">
+            <div class="faq-accordion__tab-item-flex">
+              <div class="faq-accordion__tab-item-closed">
+                <div class="faq-accordion__tab-item-title">
+                  Do you offer team discounts?
+                </div>
+                <!-- Plus Menu -->
+                <div id="plus-btn" class="plus">
+                  <span class="line vertical"></span>
+                  <span class="line horizontal"></span>
+                </div>
+              </div>
+
+              <p class="faq-accordion__tab-inner-content">
+                Teams of 5+ get up to 40% off. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Alias, vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__main-container">
+          <div class="footer__logos">
+            <div class="footer__company-logo">
+              <a href="/"
+                ><img src="./images/explorito-icon-wobg.png" alt="" />
+              </a>
+              <a href="/"><h4 class="footer__company-name">Explorito</h4></a>
+            </div>
+            <div class="footer__social">
+              <a href="" class="footer__social-link"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="" class="footer__social-link">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="" class="footer__social-link"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Quick Links</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="./#features" class="footer__links-link">Features</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="./#productivity-features" class="footer__links-link"
+                  >Productivity features</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="./#details" class="footer__links-link">Details</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="./#integrations" class="footer__links-link"
+                  >Integrations</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="#testimonials" class="footer__links-link"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="./#faq" class="footer__links-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Resources</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Privacy policy</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">User guide</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Affiliates</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Students</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Company</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">About</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Contact</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Blog</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Terms of service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- copyright  -->
+        <div class="footer__copyright">
+          <div class="footer__copyright-content">
+            <div class="footer__copyright-content-left">
+              <i class="fa-solid fa-cookie-bite"></i>
+              <p class="footer__copyright-text">
+                &copy; <span class="footer__copyright-year"></span> Explorito -
+                All rights reserved
+              </p>
+            </div>
+            <div class="footer__copyright-right">
+              <p class="footer__built-for-text">Built for Digital Explorers</p>
+              <p class="footer__disclaimer">
+                Portfolio project for educational and demonstration purposes
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ends here  -->
+      </div>
+    </footer>
+  </body>
+</html>

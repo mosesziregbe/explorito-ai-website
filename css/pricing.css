@@ -218,6 +218,8 @@ body {
   padding-bottom: 6rem;
 }
 
+/* Media Queries */
+
 /* Between 1200px and 993px - Cards can shrink/grow */
 @media (max-width: 1200px) and (min-width: 993px) {
   .pricing__grid {
