@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorito - Your AI-powered search and productivity assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/integrations.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation  -->
+    <nav class="navbar">
+      <!-- navbar  -->
+      <div class="navbar__container container">
+        <div class="navbar__left">
+          <!-- Logo, Menu items -->
+          <div class="navbar__logo">
+            <a href="/" class="navbar__company-logo"
+              ><img src="./images/explorito-icon-wobg.png" alt="" />
+            </a>
+            <a href="/"><h4 class="navbar__company-name">Explorito</h4></a>
+          </div>
+          <!-- Menu Items -->
+          <div class="navbar__menu">
+            <ul class="navbar__menu-list">
+              <li class="navbar__menu-item">
+                <a href="#" class="navbar__menu-link">Integrations</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="pricing.html" class="navbar__menu-link">Pricing</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="security.html" class="navbar__menu-link">Security</a>
+              </li>
+              <li class="navbar__menu-item">
+                <a href="./#details" class="navbar__menu-link">Details</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar__right">
+          <!-- Sign up, Download button -->
+          <div class="navbar__buttons">
+            <a href="" class="navbar__button btn--ghost">Sign In</a>
+            <a href="" class="navbar__button btn--solid">Download for free</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu  & Hamburger Icon-->
+        <div class="navbar__mobile-menu">
+          <!-- Hamburger -->
+          <button id="menu-btn" type="button" class="hamburger">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+          <!-- Mobile Menu Items  -->
+          <div class="navbar__mobile-menu-items">
+            <ul class="navbar__mobile-menu-list">
+              <li class="navbar__mobile-menu-item">
+                <a href="#" class="navbar__mobile-menu-link">Integrations</a>
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="pricing.html" class="navbar__mobile-menu-link"
+                  >Pricing</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="security.html" class="navbar__mobile-menu-link"
+                  >Security</a
+                >
+              </li>
+              <li class="navbar__mobile-menu-item">
+                <a href="./#details" class="navbar__mobile-menu-link"
+                  >Details</a
+                >
+              </li>
+            </ul>
+
+            <!-- Sign up, Download button -->
+            <div class="navbar__mobile-menu-buttons">
+              <a href="" class="navbar_mobile-menu-button btn--primary"
+                >Sign In&nbsp;&nbsp;></a
+              >
+              <a href="" class="navbar__mobile-menu-button btn--solid"
+                >Download for free</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Integrations Section -->
+    <section class="integrations">
+      <div class="integrations__container">
+        <div class="integrations__content">
+          <div class="integrations__heading">Integrations</div>
+          <h3 class="integrations__title">
+            Connect Your Digital Workspace. Unlock productivity across all your
+            tools.
+          </h3>
+          <p class="integrations__description">
+            Transform how you work by connecting Explorito with your favorite
+            apps and services. From small teams to enterprise organizations, our
+            integrations streamline your workflow and boost efficiency.
+          </p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="integrations__swiper-container">
+          <div class="integrations__swiper-wrapper">
+            <!-- Swiper Item 1 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/googledrive.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 2 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/hubspot.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 3 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/sharepoint.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 4 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/dropbox.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 5 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/gmail.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 6 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/salesforce.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 7 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/notion.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 8 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/slack.avif"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 9 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/loom.avif"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 10 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/apple.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 11 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/figma.avif"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 12 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/teams.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Duplicates Icons -->
+            <!-- Swiper Item 1 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/evernote.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 2 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/outlook.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 3 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/onenote.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 4 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/dropbox.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 5 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/gmail.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 6 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/salesforce.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 7 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/notion.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 8 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/slack.avif"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 9 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/loom.avif"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 10 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/icloud.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 11 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/figma.avif"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+            <!-- Swiper Item 12 -->
+            <div class="integrations__swiper-item">
+              <img
+                src="./images/apps_images/teams.svg"
+                class="integrations__swiper-item-logo"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apps Sections -->
+    <!-- Email Apps Section -->
+    <section class="app">
+      <div class="app__container container">
+        <div class="app__content">
+          <h4 class="app__title">Email & Communication</h4>
+          <div class="app__grid">
+            <!-- App Grid Item 1 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/gmail.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Gmail</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Connect Gmail to instantly search through emails, attachments,
+                and conversations across your entire inbox.
+              </p>
+            </div>
+            <!-- App Grid Item 2 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/outlook.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Outlook</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Integrate Outlook for powerful email search and quick access to
+                messages, contacts, and attachments.
+              </p>
+            </div>
+            <!-- App Grid Item 3 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/imap.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">IMAP Email</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Connect any IMAP-compatible email service for universal email
+                search capabilities across providers.
+              </p>
+            </div>
+            <!-- App Grid Item 4 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/outlook.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Outlook Archives (PST)</p>
+                </div>
+                <p class="app__grid-item-tag"></p>
+              </div>
+              <p class="app__grid-item-details">
+                Access archived Outlook data files and search through years of
+                stored emails and attachments.
+              </p>
+            </div>
+            <!-- App Grid Item 5 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/yahoomail.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Yahoo! Mail</p>
+                </div>
+                <p class="app__grid-item-tag"></p>
+              </div>
+              <p class="app__grid-item-details">
+                Connect Yahoo Mail for comprehensive search across emails,
+                folders, and contact information.
+              </p>
+            </div>
+            <!-- App Grid Item 6 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/emailimap.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Exchange Server</p>
+                </div>
+                <p class="app__grid-item-tag text--coming-soon">Coming Soon</p>
+              </div>
+              <p class="app__grid-item-details">
+                Connect Yahoo Mail for comprehensive search across emails,
+                folders, and contact information.
+              </p>
+            </div>
+            <!-- App Grid Item 7 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/apple.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Apple Mail</p>
+                </div>
+                <p class="app__grid-item-tag text--coming-soon">Coming Soon</p>
+              </div>
+              <p class="app__grid-item-details">
+                Native integration for Apple Mail users seeking seamless email
+                search functionality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Calendar Apps Section -->
+    <section class="app">
+      <div class="app__container container">
+        <div class="app__content">
+          <h4 class="app__title">Calendar & Scheduling</h4>
+          <div class="app__grid">
+            <!-- App Grid Item 1 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/googlecalendar.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Google Calendar</p>
+                </div>
+                <p class="app__grid-item-tag"></p>
+              </div>
+              <p class="app__grid-item-details">
+                Sync with Google Calendar to search events, meeting notes, and
+                appointment details instantly.
+              </p>
+            </div>
+            <!-- App Grid Item 2 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/outlook.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Outlook Calendar</p>
+                </div>
+                <p class="app__grid-item-tag"></p>
+              </div>
+              <p class="app__grid-item-details">
+                Integrate Outlook Calendar for quick access to meetings,
+                schedules, and event information.
+              </p>
+            </div>
+            <!-- App Grid Item 3 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/calendly.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Calendly</p>
+                </div>
+                <p class="app__grid-item-tag text--coming-soon">Coming Soon</p>
+              </div>
+              <p class="app__grid-item-details">
+                Connect scheduling workflows and search through booking history
+                and appointment data.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Productivity Apps Section -->
+    <section class="app">
+      <div class="app__container container">
+        <div class="app__content">
+          <h4 class="app__title">Productivity & Notes</h4>
+          <div class="app__grid">
+            <!-- App Grid Item 1 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/googlecalendar.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Notion</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Link your Notion workspace to search across pages, databases,
+                and collaborative documents.
+              </p>
+            </div>
+            <!-- App Grid Item 2 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/evernote.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Evernote</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Access notes, web clips, and attachments from your Evernote
+                library with lightning-fast search.
+              </p>
+            </div>
+            <!-- App Grid Item 3 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/onenote.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">OneNote</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Connect Microsoft OneNote for instant access to notebooks,
+                sections, and handwritten notes.
+              </p>
+            </div>
+            <!-- App Grid Item 4 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/loom.avif"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Loom</p>
+                </div>
+                <p class="app__grid-item-tag text--coming-soon">Coming Soon</p>
+              </div>
+              <p class="app__grid-item-details">
+                Search through video recordings, transcripts, and shared content
+                from your Loom library.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Storage Section -->
+    <section class="app">
+      <div class="app__container container">
+        <div class="app__content">
+          <h4 class="app__title">Cloud Storage & Files</h4>
+          <div class="app__grid">
+            <!-- App Grid Item 1 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/folder.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Local Folders</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Index files directly from your computer for unified search
+                across all local documents and media.
+              </p>
+            </div>
+            <!-- App Grid Item 2 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/googledrive.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Google Drive</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Connect Google Drive to search documents, spreadsheets,
+                presentations, and shared files.
+              </p>
+            </div>
+            <!-- App Grid Item 3 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/sharepoint.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">SharePoint</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Enterprise integration for SharePoint sites, document libraries,
+                and collaborative workspaces.
+              </p>
+            </div>
+            <!-- App Grid Item 4 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/onedrive.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">OneDrive</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Sync Microsoft OneDrive for seamless search across personal and
+                business cloud storage.
+              </p>
+            </div>
+            <!-- App Grid Item 5 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/googlecalendar.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Dropbox</p>
+                </div>
+                <p class="app__grid-item-tag text--popular">Popular</p>
+              </div>
+              <p class="app__grid-item-details">
+                Integrate Dropbox to search personal and team folders with
+                advanced file filtering options.
+              </p>
+            </div>
+            <!-- App Grid Item 6 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/pcloud.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">pCloud</p>
+                </div>
+                <p class="app__grid-item-tag"></p>
+              </div>
+              <p class="app__grid-item-details">
+                Secure integration with pCloud for encrypted file search and
+                privacy-focused storage access.
+              </p>
+            </div>
+            <!-- App Grid Item 7 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/box.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Box</p>
+                </div>
+                <p class="app__grid-item-tag"></p>
+              </div>
+              <p class="app__grid-item-details">
+                Enterprise cloud storage integration with advanced security and
+                compliance features.
+              </p>
+            </div>
+            <!-- App Grid Item 8 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/icloud.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">iCloud</p>
+                </div>
+                <p class="app__grid-item-tag text--coming-soon">Coming Soon</p>
+              </div>
+              <p class="app__grid-item-details">
+                Native Apple iCloud integration for photos, documents, and
+                synchronized file access.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CRM Section -->
+    <section class="app">
+      <div class="app__container container">
+        <div class="app__content">
+          <h4 class="app__title">CRM</h4>
+          <div class="app__grid">
+            <!-- App Grid Item 1 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/salesforce.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Salesforce</p>
+                </div>
+                <p class="app__grid-item-tag"></p>
+              </div>
+              <p class="app__grid-item-details">
+                Connect Salesforce CRM for comprehensive search across leads,
+                contacts, opportunities, and cases.
+              </p>
+            </div>
+            <!-- App Grid Item 2 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/hubspot.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">HubSpot</p>
+                </div>
+                <p class="app__grid-item-tag text--popular"></p>
+              </div>
+              <p class="app__grid-item-details">
+                Integrate HubSpot to search marketing campaigns, sales
+                pipelines, and customer interactions.
+              </p>
+            </div>
+            <!-- App Grid Item 3 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/servicenow.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">ServiceNow</p>
+                </div>
+                <p class="app__grid-item-tag text--coming-soon">Coming Soon</p>
+              </div>
+              <p class="app__grid-item-details">
+                IT service management integration for tickets, knowledge base,
+                and workflow automation.
+              </p>
+            </div>
+            <!-- App Grid Item 4 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/pipedrive.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Pipedrive</p>
+                </div>
+                <p class="app__grid-item-tag text--coming-soon">Coming Soon</p>
+              </div>
+              <p class="app__grid-item-details">
+                Sales pipeline integration for deal tracking, contact
+                management, and activity history.
+              </p>
+            </div>
+            <!-- App Grid Item 5 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/docusign.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">DocuSign</p>
+                </div>
+                <p class="app__grid-item-tag text--coming-soon">Coming Soon</p>
+              </div>
+              <p class="app__grid-item-details">
+                Document workflow integration for contract search and signature
+                status tracking.
+              </p>
+            </div>
+            <!-- App Grid Item 6 -->
+            <div class="app__grid-item">
+              <div class="app__grid-item-top">
+                <div class="app__grid-item-left">
+                  <img
+                    src="./images/apps_images/zendesk.svg"
+                    class="app__grid-item-image"
+                    alt=""
+                  />
+                  <p class="app__grid-item-title">Zendesk</p>
+                </div>
+                <p class="app__grid-item-tag text--coming-soon">Coming Soon</p>
+              </div>
+              <p class="app__grid-item-details">
+                Customer support integration for ticket search, knowledge base
+                access, and team collaboration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__main-container">
+          <div class="footer__logos">
+            <div class="footer__company-logo">
+              <a href="/"
+                ><img src="./images/explorito-icon-wobg.png" alt="" />
+              </a>
+              <a href="/"><h4 class="footer__company-name">Explorito</h4></a>
+            </div>
+            <div class="footer__social">
+              <a href="" class="footer__social-link"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="" class="footer__social-link">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="" class="footer__social-link"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Quick Links</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="./#features" class="footer__links-link">Features</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="./#productivity-features" class="footer__links-link"
+                  >Productivity features</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="./#details" class="footer__links-link">Details</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#" class="footer__links-link">Integrations</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#testimonials" class="footer__links-link"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="footer__links-item">
+                <a href="./#faq" class="footer__links-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Resources</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Privacy policy</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">User guide</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Affiliates</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Students</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Company</h4>
+            <ul class="footer__links-list">
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">About</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Contact</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Blog</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="" class="footer__links-link">Terms of service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- copyright  -->
+        <div class="footer__copyright">
+          <div class="footer__copyright-content">
+            <div class="footer__copyright-content-left">
+              <i class="fa-solid fa-cookie-bite"></i>
+              <p class="footer__copyright-text">
+                &copy; <span class="footer__copyright-year"></span> Explorito -
+                All rights reserved
+              </p>
+            </div>
+            <div class="footer__copyright-right">
+              <p class="footer__built-for-text">Built for Digital Explorers</p>
+              <p class="footer__disclaimer">
+                Portfolio project for educational and demonstration purposes
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ends here  -->
+      </div>
+    </footer>
+  </body>
+</html>

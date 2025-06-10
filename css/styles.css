@@ -651,12 +651,6 @@ a.productivity-features__bento-grid-item::before {
   text-align: center;
 }
 
-.testimonial__swiper-main-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
 .testimonials__content {
   max-width: 800px;
   padding: 2rem 2rem 0;
@@ -687,6 +681,12 @@ a.productivity-features__bento-grid-item::before {
 
 .testimonial__swiper {
   padding: 0 2rem;
+  width: 100%;
+}
+
+.testimonial__swiper-main-container {
+  position: relative;
+  overflow: hidden;
   width: 100%;
 }
 
