@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorito - Your AI-powered search and productivity assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/sign-in.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <div class="auth-page__container container">
+        <div class="auth-page__header">
+          <h1 class="auth-page__company-name">explorito</h1>
+          <a href="/"
+            ><img
+              src="./images/explorito-icon-wobg.png"
+              class="auth-page__logo"
+              alt=""
+          /></a>
+        </div>
+        <div class="auth-page__main-container">
+          <div class="auth-page__content">
+            <div class="auth-page__text">
+              <h2 class="auth-page__text-title">Create your free account</h2>
+              <p class="auth-page__text-description">
+                Join thousands of people working faster with Explorito
+              </p>
+            </div>
+
+            <!-- Social login buttons -->
+            <div class="auth-page__social-buttons">
+              <a href="#" class="auth-page__social-button btn--primary"
+                ><img
+                  src="./images/apps_images/google.svg"
+                  alt=""
+                  class="auth-page__social-logo"
+                />Sign up with Google</a
+              >
+              <a href="#" class="auth-page__social-button btn--primary"
+                ><img
+                  src="./images/apps_images/microsoft.svg"
+                  alt=""
+                  class="auth-page__social-logo"
+                />Sign up with Microsoft</a
+              >
+            </div>
+
+            <!-- Divider -->
+            <div class="auth-page__divider">
+              <span class="auth-page__divider-text">OR</span>
+            </div>
+
+            <!-- Sign Up -->
+
+            <h2 class="auth-page__signup-text">Sign up with email</h2>
+
+            <!-- Email form -->
+
+            <form class="auth-page__form" action="#">
+              <div class="auth-page__form-firstname">
+                <label for="first-name">First Name</label
+                ><input
+                  type="text"
+                  id="first-name"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div class="auth-page__form-lastname">
+                <label for="last-name">Last Name</label
+                ><input type="text" id="last-name" placeholder="Doe" required />
+              </div>
+              <div class="auth-page__form-email">
+                <label for="email">Email</label
+                ><input
+                  type="email"
+                  id="email"
+                  placeholder="email@example.com"
+                  required
+                />
+              </div>
+              <button class="auth-page__form-btn btn--primary">Sign Up</button>
+              <p class="auth-page__form-message">
+                ✨ We'll email you a link to confirm your account.
+              </p>
+            </form>
+
+            <!-- Footer -->
+            <div class="auth-page__bottom-text">
+              <p>Have an account? <a href="">Sign In.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="auth-page__footer">
+        <p class="auth-page__footer-text">
+          &copy; <span class="footer__copyright-year"></span> Explorito - All
+          rights reserved, <a href="#">Terms</a>, <a href="">Privacy</a>
+        </p>
+        <br />
+        <p class="footer__disclaimer">
+          Portfolio project for educational and demonstration purposes
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
