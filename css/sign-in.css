@@ -112,6 +112,7 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0.8rem;
+  text-align: center;
 }
 
 /* Form */
@@ -132,12 +133,15 @@ body {
   grid-column: span 2;
   cursor: pointer;
   font-size: 1.2rem;
+  margin-top: 0.8rem;
 }
 
 .auth-page__form-message {
   grid-column: span 2;
   border-radius: 6px;
   padding: 0.6rem;
+  background-color: #e8f5fb;
+  margin-top: 1rem;
 }
 
 .auth-page__form label {
@@ -163,7 +167,7 @@ body {
 
 .auth-page__form *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem #e8f5fb;
+  box-shadow: 0 0 0 0.4rem #e8f5fb;
 }
 
 .auth-page__bottom-text a {
@@ -193,21 +197,12 @@ body {
   .auth-page__form {
     display: flex;
     flex-direction: column;
-    column-gap: 1rem;
+    column-gap: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .auth-page__container {
     padding: 1rem;
-  }
-
-  .auth-page__form {
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-  }
-
-  .auth-page__form-email {
-    grid-column: span 1;
   }
 }
